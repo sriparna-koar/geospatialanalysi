@@ -1,13 +1,12 @@
 
 import streamlit as st
-from streamlit_folium import folium_static
 import nltk
 import matplotlib.pyplot as plt
 import folium
 from folium.plugins import MarkerCluster, HeatMap
 from nltk.sentiment.vader import SentimentIntensityAnalyzer
 from geopy.geocoders import Nominatim
-
+from streamlit_folium import folium_static
 # Initialize NLTK's Vader
 nltk.download('vader_lexicon')
 sid = SentimentIntensityAnalyzer()
